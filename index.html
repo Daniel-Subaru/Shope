@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет Магазин</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Інтернет Магазин</h1>
+        <nav>
+            <ul>
+                <li> Головна</li>
+                <li>Продукти</li>
+                <li>Про нас</li>
+                <li>Контакти</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <div class="product">
+                <h2>Смартфон</h2>
+                <img src="img/oneplus-8-prev.jpg" alt="Смартфон">
+                <p>Опис: Потужний смартфон з великим екраном та швидким процесором</p>
+                <p>Ціна: 16000 грн</p>
+                <button class="buy" onclick="addToCart('Смартфон', 16000, 'img/oneplus-8-prev.jpg')">Додати до кошика</button>
+            </div>
+            <div class="product">
+                <h2>Ноутбук</h2>
+                <img src="img/1102-microsoft-surface-book-2-intel-core-i7-8650u-16gb-1tb-ssd-gtx-1050-135-tactil.webp" alt="Ноутбук">
+                <p>Опис: Продуктивний ноутбук для роботи та розваг</p>
+                <p>Ціна: 25000 грн</p>
+                <button class="buy" onclick="addToCart('Ноутбук', 25000, 'img/1102-microsoft-surface-book-2-intel-core-i7-8650u-16gb-1tb-ssd-gtx-1050-135-tactil.webp')">Додати до кошика</button>
+            </div>
+            <div class="product">
+                <h2>Планшет</h2>
+                <img src="img/4113a4acea66bc9b3e2817be7dbfe81e-1200x1200.jpg" alt="Планшет">
+                <p>Опис: Компактний планшет з високою роздільною здатністю екрану</p>
+                <p>Ціна: 8000 грн</p>
+                <button class="buy" onclick="addToCart('Планшет', 8000, 'img/4113a4acea66bc9b3e2817be7dbfe81e-1200x1200.jpg')">Додати до кошика</button>
+            </div>
+            <div class="product">
+                <h2>Смарт-годинник</h2>
+                <img src="img/wsgd55c7i7jq0kxydqqvpvnp1m4rj9cn.webp" alt="Смарт-годинник">
+                <p>Опис: Стильний смарт-годинник з багатьма корисними функціями</p>
+                <p>Ціна: 13000 грн</p>
+                <button class="buy" onclick="addToCart('Смарт-годинник', 13000, 'img/wsgd55c7i7jq0kxydqqvpvnp1m4rj9cn.webp')">Додати до кошика</button>
+            </div>
+            <div class="product">
+                <h2>OnePlus Buds Pro 2</h2>
+                <img src="img/OnePlus-Buds-Pro-2-29-Arbor-Green-02-600x600.webp" alt="Навушники">
+                <p>Опис: Якісні навушники з чистим звуком та шумоізоляцією</p>
+                <p>Ціна: 6000 грн</p>
+                <button class="buy" onclick="addToCart('Навушники', 6000, 'img/OnePlus-Buds-Pro-2-29-Arbor-Green-02-600x600.webp')">Додати до кошика</button>
+            </div>
+            <div class="product">
+                <h2>PlayStation 5</h2>
+                <img src="img/opt.BEAT_0_HOR_KEYART_RGB_061120_001D.webp" alt="Ігрова консоль">
+                <p>Опис: Ігрова консоль, на якій можна пограти та витратити багато часу</p>
+                <p>Ціна: 24000 грн</p>
+                <button class="buy" onclick="addToCart('Ігрова консоль', 24000, 'img/opt.BEAT_0_HOR_KEYART_RGB_061120_001D.webp')">Додати до кошика</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2 class="basket">Кошик</h2>
+            <div class="cart-header">
+                <div>Товар</div>
+                <div>Кількість</div>
+                <div>Ціна</div>
+                <div>Дії</div>
+            </div>
+            <div id="cart-items"></div>
+            <p id="total-price">Загальна вартість: 0 грн</p>
+            <button class="Clear" onclick="clearCart()">Очистити кошик</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Інтернет Магазин</p>
+    </footer>
+    <script src="js/javascr.js"></script>
+</body>
+</html>
