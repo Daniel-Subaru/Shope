@@ -8,6 +8,27 @@ body {
     transition: 0.5s;
     font-size: large;
 }
+#search {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: #fcf97185;
+}
+
+#search:focus {
+    outline: none;
+    border-color: #141212;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+#search:active {
+    transform: scale(0.98);
+}
+
 header {
     background-color: #494646;
     color: #fff;
