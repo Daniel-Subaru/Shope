@@ -1,3 +1,16 @@
+function searchProducts() {
+    const query = document.getElementById('search').value.toLowerCase();
+    const products = document.querySelectorAll('.product');
+    products.forEach(product => {
+        const name = product.querySelector('h2').textContent.toLowerCase();
+        const description = product.querySelector('p').textContent.toLowerCase();
+        if (name.includes(query) || description.includes(query)) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+}
 let cart = [];
 
         function addToCart(name, price, image) {
